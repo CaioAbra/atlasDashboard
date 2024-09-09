@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caio Matheus dos Santos Abra">
+    <title>DashBoard</title>
+    <link rel="icon" href="./src/img/logo/logo.ico" type="image/x-icon">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+
+    <link rel="stylesheet" href="./assets/lib/bootstrap-4.6.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./assets/lib/bootstrap-4.6.2-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./assets/lib/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="sidebar-header">
+                            <img class="iconDesactive" src="./src/img/logo/Logo Atlas Horizontal White.svg" alt="">
+                            <img class="iconActive d-none" src="./src/img/logo/ATLAS icone 2.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-4 text-center">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <img class="img-auto" src="./src/img/icons/btn-reduce.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Estatísticas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Estatísticas</span>
+                    </a>
+                </li>
+                <!-- Outros itens do menu -->
+            </ul>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div id="content">
+            <!-- Navbar Superior -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-header">
+                            <span class="navbar-brand">Bom dia, Jon Snow</span>
+                            <span class="navbar-subtitle">Bem vindo(a) à sua plataforma de afiliados</span>
+                        </div>
+
+                        <form class="form-inline mx-auto">
+                            <input class="form-control search-box" type="search" placeholder="" aria-label="Search">
+                        </form>
+
+                        <ul class="navbar-nav ml-auto align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-comments"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link profile-link" href="#">
+                                    <img src="./src/img/profile.jpg" class="rounded-circle" alt="Profile" width="30">
+                                    <span>jonsnow@gmail.com</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- Painel de Cards -->
+            <div class="container-fluid mt-4">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-2">
+                                <div class="card custom-card">
+                                    <div class="card-body">
+                                        <h6 class="card-title"><img src="./src/img/icons/dolar 1.svg">Saldo Disponível
+                                        </h6>
+                                        <h2 class="card-value orange">R$ 89.521,09</h2>
+                                        <p class="card-subtext"><img src="./src/img/icons/Fill-4.svg"><span
+                                                class="green">15%</span> vs mês anterior +R$ 1.401,14 hoje</p>
+                                        <div class="dropdown-divider"></div>
+
+                                        <a href="#" class="card-link">Retirar fundos ></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-2">
+                                <div class="card custom-card">
+                                    <div class="card-body">
+                                        <h6 class="card-title"><img src="./src/img/icons/lucrosTotais.svg">Lucros Totais
+                                        </h6>
+                                        <h2 class="card-value">R$ 317.014,95</h2>
+                                        <p class="card-subtext"><img src="./src/img/icons/Fill-4.svg"><span
+                                                class="green">2%</span> vs mês anterior +R$ 1.401,14 hoje</p>
+                                        <div class="dropdown-divider"></div>
+
+                                        <a href="#" class="card-link">Ver relatório ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-2">
+                                <div class="card custom-card">
+                                    <div class="card-body">
+                                        <h6 class="card-title"><img src="./src/img/icons/deposito.svg">Depósitos Totais
+                                        </h6>
+                                        <h2 class="card-value">R$ 570.626,91</h2>
+                                        <p class="card-subtext"><img src="./src/img/icons/Fill-4.svg"><span
+                                                class="green">8%</span> vs mês anterior</p>
+                                        <div class="dropdown-divider"></div>
+
+                                        <a href="#" class="card-link">Ver relatório ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-2">
+                                <div class="card custom-card">
+                                    <div class="card-body">
+                                        <h6 class="card-title"><img src="./src/img/icons/registro.svg">Registros</h6>
+                                        <h2 class="card-value">17.974</h2>
+                                        <p class="card-subtext"><img
+                                                src="./src/img/icons/seta-para-cima-direita 1.svg"><span
+                                                class="red">4%</span> vs mês anterior +97 hoje</p>
+                                        <div class="dropdown-divider"></div>
+
+                                        <a href="#" class="card-link">Ver relatório ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-lg-4 mb-2">
+                        <div class="card custom-card grafico">
+                            <div class="card-body">
+                                <h6 class="card-title"><img src="./src/img/icons/receita.svg">Receita</h6>
+                                <h2 class="card-value">R$ 76.092,926</h2>
+                                <p class="card-subtext"><img src="./src/img/icons/Fill-4.svg"><span
+                                        class="green">15%</span> vs mês anterior</p>
+                                <canvas id="chart"></canvas>
+                                <div class="dropdown-divider"></div>
+
+                                <a href="#" class="card-link">Ver relatório ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 top-afiliados">
+                        <div class="card card custom-card shadow">
+                            <div class="card-body">
+                                <h6 class="card-title"><img src="./src/img/icons/top.svg">Top Afiliados</h6>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Posição</th>
+                                            <th>Id do afiliado</th>
+                                            <th>Depósitos</th>
+                                            <th>Soma de depósitos</th>
+                                            <th>Lucro</th>
+                                            <th>Saque</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1º</td>
+                                            <td>#*****0301</td>
+                                            <td>150</td>
+                                            <td>R$ 22.450,00</td>
+                                            <td>R$ 7.700,00</td>
+                                            <td>R$ 6.900,80</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2º</td>
+                                            <td>#*****0301</td>
+                                            <td>150</td>
+                                            <td>R$ 22.450,00</td>
+                                            <td>R$ 7.700,00</td>
+                                            <td>R$ 6.900,80</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3º</td>
+                                            <td>#*****0301</td>
+                                            <td>150</td>
+                                            <td>R$ 22.450,00</td>
+                                            <td>R$ 7.700,00</td>
+                                            <td>R$ 6.900,80</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4º</td>
+                                            <td>#*****0301</td>
+                                            <td>150</td>
+                                            <td>R$ 22.450,00</td>
+                                            <td>R$ 7.700,00</td>
+                                            <td>R$ 6.900,80</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5º</td>
+                                            <td>#*****0301</td>
+                                            <td>150</td>
+                                            <td>R$ 22.450,00</td>
+                                            <td>R$ 7.700,00</td>
+                                            <td>R$ 6.900,80</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="dropdown-divider"></div>
+
+                                <a href="#" class="text-white">Ver relatório</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="card card custom-card shadow">
+                            <div class="card-body">
+                                <h6 class="card-title"><img src="./src/img/icons/links.svg">Links Rápidos</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="text-white"><img class="mr-2" src="./src/img/icons/plus.svg">Saque</a></li>
+                                    <div class="dropdown-divider my-3"></div>
+
+                                    <li><a href="#" class="text-white"><img class="mr-2" src="./src/img/icons/plus.svg">Programa de afiliados</a></li>
+                                    <div class="dropdown-divider my-3"></div>
+
+                                    <li><a href="#" class="text-white"><img class="mr-2" src="./src/img/icons/plus.svg">Suporte</a></li>
+                                    <div class="dropdown-divider my-3"></div>
+
+                                    <li><a href="#" class="text-white"><img class="mr-2" src="./src/img/icons/plus.svg">Perguntas frequentes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <script src="./assets/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/lib/bootstrap.bundle.min.js"></script>
+    <script src="./assets/lib/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/lib/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/javascript/index.js"></script>
+
+</body>
+
+</html>
