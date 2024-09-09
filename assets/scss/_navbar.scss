@@ -35,6 +35,15 @@
                 color: #8c8c8c;
                 font-size: 1.2rem;
 
+                &:not(.profile-link) {
+                    border-radius: 50%;
+                    background-color: var(--preto-medio);
+                    height: 3rem;
+                    width: 3rem;
+                    align-content: center;
+                    text-align: center;
+                }
+
                 &:hover {
                     color: #f0ad4e;
                 }

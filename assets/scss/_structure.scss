@@ -30,6 +30,8 @@
             &.active {
                 stroke: var(--laranja);
                 color: var(--laranja);
+                border: solid 1px;
+                border-radius: 12px;
 
                 svg {
                     stroke: var(--laranja);
@@ -53,6 +55,10 @@
 
         svg {
             stroke: #F4F4F4;
+
+            @media screen and (min-width:768px) {
+                margin-right: .5rem;
+            }
             // fill: #F4F4F4;
 
             // &.active {

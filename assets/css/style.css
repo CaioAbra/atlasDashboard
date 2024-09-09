@@ -81,6 +81,8 @@ span {
 #sidebar ul.components a.active {
   stroke: var(--laranja);
   color: var(--laranja);
+  border: solid 1px;
+  border-radius: 12px;
 }
 #sidebar ul.components a.active svg {
   stroke: var(--laranja);
@@ -97,6 +99,11 @@ span {
 }
 #sidebar ul.components svg {
   stroke: #F4F4F4;
+}
+@media screen and (min-width: 768px) {
+  #sidebar ul.components svg {
+    margin-right: 0.5rem;
+  }
 }
 
 #sidebar.active {
@@ -235,6 +242,14 @@ span {
 .navbar .navbar-nav .nav-item .nav-link {
   color: #8c8c8c;
   font-size: 1.2rem;
+}
+.navbar .navbar-nav .nav-item .nav-link:not(.profile-link) {
+  border-radius: 50%;
+  background-color: var(--preto-medio);
+  height: 3rem;
+  width: 3rem;
+  align-content: center;
+  text-align: center;
 }
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #f0ad4e;
