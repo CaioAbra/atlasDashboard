@@ -76,7 +76,8 @@ span {
   padding: 10px;
   font-size: 1.1em;
   display: block;
-  color: #fff;
+  color: var(--cinza-claro);
+  transition: all 0.3s ease;
 }
 #sidebar ul.components a.active {
   stroke: var(--laranja);
@@ -89,6 +90,10 @@ span {
 }
 #sidebar ul.components a:hover {
   text-decoration: none;
+  color: var(--laranja);
+}
+#sidebar ul.components a:hover svg {
+  stroke: var(--laranja);
 }
 #sidebar ul.components .titles {
   padding: 10px;
@@ -240,7 +245,7 @@ span {
   margin-left: 15px;
 }
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #8c8c8c;
+  color: #F4F4F4;
   font-size: 1.2rem;
 }
 .navbar .navbar-nav .nav-item .nav-link:not(.profile-link) {

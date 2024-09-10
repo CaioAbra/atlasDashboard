@@ -25,7 +25,8 @@
             padding: 10px;
             font-size: 1.1em;
             display: block;
-            color: #fff;
+            color: var(--cinza-claro);
+            transition: all .3s ease;
 
             &.active {
                 stroke: var(--laranja);
@@ -42,6 +43,12 @@
 
             &:hover {
                 text-decoration: none;
+                color: var(--laranja);
+
+                svg {
+                    stroke: var(--laranja);
+                    // fill: var(--laranja);
+                }
             }
         }
 
@@ -59,6 +66,7 @@
             @media screen and (min-width:768px) {
                 margin-right: .5rem;
             }
+
             // fill: #F4F4F4;
 
             // &.active {
