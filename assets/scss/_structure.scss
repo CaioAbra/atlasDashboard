@@ -29,7 +29,7 @@
             transition: all .3s ease;
 
             &.active {
-                stroke: var(--laranja);
+                // stroke: var(--laranja);
                 color: var(--laranja);
                 border: solid 1px;
                 border-radius: 12px;
@@ -61,7 +61,7 @@
         }
 
         svg {
-            stroke: #F4F4F4;
+            // stroke: #F4F4F4;
 
             @media screen and (min-width:768px) {
                 margin-right: .5rem;
@@ -134,9 +134,13 @@
     // height: 100%;
 
     .card-title {
-        font-size: 1rem;
         color: var(--cinza-medio);
-        margin-bottom: 10px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17.86px;
+        display: flex;
+        letter-spacing: 1px;
+        align-items: center;
 
         img {
             margin-right: .5rem;

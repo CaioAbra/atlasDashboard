@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: SpaceGrotesk-bold;
+  font-family: "SpaceGrotesk-bold";
 }
 
 p,
@@ -43,12 +43,12 @@ a,
 ul,
 li,
 span {
-  font-family: SpaceGrotesk-Light;
+  font-family: "SpaceGrotesk-Regular";
 }
 
 .navbar-brand,
 .navbar-subtitle {
-  font-family: SpaceGrotesk-Regular;
+  font-family: "SpaceGrotesk-Regular";
 }
 
 .wrapper {
@@ -80,7 +80,6 @@ span {
   transition: all 0.3s ease;
 }
 #sidebar ul.components a.active {
-  stroke: var(--laranja);
   color: var(--laranja);
   border: solid 1px;
   border-radius: 12px;
@@ -101,9 +100,6 @@ span {
   display: block;
   color: var(--cinza-claro);
   text-transform: uppercase;
-}
-#sidebar ul.components svg {
-  stroke: #F4F4F4;
 }
 @media screen and (min-width: 768px) {
   #sidebar ul.components svg {
@@ -160,9 +156,13 @@ span {
   min-height: 234px;
 }
 .custom-card .card-title {
-  font-size: 1rem;
   color: var(--cinza-medio);
-  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17.86px;
+  display: flex;
+  letter-spacing: 1px;
+  align-items: center;
 }
 .custom-card .card-title img {
   margin-right: 0.5rem;
