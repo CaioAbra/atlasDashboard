@@ -30,7 +30,7 @@
                         </div>
 
 
-                        <div class="col-4 text-center">
+                        <div class="col-4 text-center d-none d-lg-flex">
                             <button type="button" id="sidebarCollapse" class="btn btn-info">
                                 <img class="img-auto" src="./src/img/icons/btn-reduce.svg" alt="">
                             </button>
@@ -257,12 +257,18 @@
                     </a>
                 </li>
             </ul>
+
+            <a class="side-link profile-link d-none" href="#">
+                <img src="./src/img/profile.jpg" class="rounded-circle" alt="Profile" width="30">
+                <span>jonsnow@gmail.com</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
 
         <!-- Conteúdo Principal -->
         <div id="content">
             <!-- Navbar Superior -->
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg d-none">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -276,7 +282,7 @@
                             <span class="navbar-subtitle">Bem vindo(a) à sua plataforma de afiliados</span>
                         </div>
 
-                        <form class="form-inline mx-auto">
+                        <form class="form-inline mx-auto d-none d-lg-flex">
                             <input class="form-control search-box" type="search" placeholder="" aria-label="Search">
                         </form>
 
@@ -334,20 +340,44 @@
                 </div>
             </nav>
 
+            <nav class="navbar">
+                <div>
+                    <div class="d-block d-lg-none">
+                        <button class="togle">
+                            <img src="./src/img/navbar_desactive.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="navbar-header d-none d-lg-flex">
+                        <span class="navbar-brand">Bom dia, Jon Snow</span>
+                        <span class="navbar-subtitle">Bem vindo(a) à sua plataforma de afiliados</span>
+                    </div>
+
+
+                    <form class="form-inline mx-auto d-none d-lg-flex">
+                        <input class="form-control search-box" type="search" placeholder="" aria-label="Search">
+                    </form>
+                </div>
+            </nav>
+
 
             <!-- Painel de Cards -->
-            <div class="container-fluid mt-4">
+            <div class="container-fluid mt-4 cards-painel">
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <div class="row">
                             <div class="col-12 col-lg-6 mb-2">
                                 <div class="card custom-card">
                                     <div class="card-body">
-                                        <h6 class="card-title"><img src="./src/img/icons/dolar 1.svg">Saldo Disponível
+                                        <h6 class="card-title"><img src="./src/img/icons/dolar 1.svg">Saldo
+                                            Disponível
                                         </h6>
                                         <h2 class="card-value orange">R$ 89.521,09</h2>
-                                        <p class="card-subtext"><img src="./src/img/icons/Fill-4.svg"><span
-                                                class="green">15%</span> vs mês anterior +R$ 1.401,14 hoje</p>
+                                        <p class="card-subtext">
+                                            <img src="./src/img/icons/Fill-4.svg">
+                                            <span class="green">15%</span> vs mês anterior <span
+                                                class="color-darkGray">+R$ 1.401,14 hoje</span>
+                                        </p>
                                         <div class="dropdown-divider"></div>
 
                                         <a href="#" class="card-link">Retirar fundos ></a>
@@ -358,11 +388,13 @@
                             <div class="col-12 col-lg-6 mb-2">
                                 <div class="card custom-card">
                                     <div class="card-body">
-                                        <h6 class="card-title"><img src="./src/img/icons/lucrosTotais.svg">Lucros Totais
+                                        <h6 class="card-title"><img src="./src/img/icons/lucrosTotais.svg">Lucros
+                                            Totais
                                         </h6>
                                         <h2 class="card-value">R$ 317.014,95</h2>
                                         <p class="card-subtext"><img src="./src/img/icons/Fill-4.svg"><span
-                                                class="green">2%</span> vs mês anterior +R$ 1.401,14 hoje</p>
+                                                class="green">2%</span> vs mês anterior <span class="color-darkGray">+R$
+                                                1.401,14 hoje</span></p>
                                         <div class="dropdown-divider"></div>
 
                                         <a href="#" class="card-link">Ver relatório ></a>
@@ -375,11 +407,15 @@
                             <div class="col-12 col-lg-6 mb-2">
                                 <div class="card custom-card">
                                     <div class="card-body">
-                                        <h6 class="card-title"><img src="./src/img/icons/deposito.svg">Depósitos Totais
+                                        <h6 class="card-title"><img src="./src/img/icons/deposito.svg">Depósitos
+                                            Totais
                                         </h6>
                                         <h2 class="card-value">R$ 570.626,91</h2>
-                                        <p class="card-subtext"><img src="./src/img/icons/Fill-4.svg"><span
-                                                class="green">8%</span> vs mês anterior</p>
+                                        <p class="card-subtext">
+                                            <img src="./src/img/icons/Fill-4.svg">
+                                            <span class="green">8%</span> vs mês anterior <span class="color-darkGray">
+                                                1.937 FTD’s</span>
+                                        </p>
                                         <div class="dropdown-divider"></div>
 
                                         <a href="#" class="card-link">Ver relatório ></a>
@@ -389,11 +425,13 @@
                             <div class="col-12 col-lg-6 mb-2">
                                 <div class="card custom-card">
                                     <div class="card-body">
-                                        <h6 class="card-title"><img src="./src/img/icons/registro.svg">Registros</h6>
+                                        <h6 class="card-title"><img src="./src/img/icons/registro.svg">Registros
+                                        </h6>
                                         <h2 class="card-value">17.974</h2>
                                         <p class="card-subtext"><img
                                                 src="./src/img/icons/seta-para-cima-direita 1.svg"><span
-                                                class="red">4%</span> vs mês anterior +97 hoje</p>
+                                                class="red">4%</span> vs mês anterior <span class="color-darkGray">+97
+                                                hoje</span></p>
                                         <div class="dropdown-divider"></div>
 
                                         <a href="#" class="card-link">Ver relatório ></a>
@@ -491,7 +529,7 @@
                     <div class="col-12 col-lg-4">
                         <div class="card card custom-card shadow">
                             <div class="card-body">
-                                <h6 class="card-title"><img src="./src/img/icons/links.svg">Links Rápidos</h6>
+                                <h6 class="card-title"><img src="./src/img/icons/fastLink.svg">Links Rápidos</h6>
                                 <ul class="list-unstyled">
                                     <li><a href="#" class="text-white"><img class="mr-2"
                                                 src="./src/img/icons/plus.svg">Saque</a></li>

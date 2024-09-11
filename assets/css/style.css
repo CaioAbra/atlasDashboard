@@ -57,6 +57,7 @@ span {
 }
 
 #sidebar {
+  display: none;
   padding-top: 56px;
   padding-bottom: 20px;
   min-width: 329px;
@@ -118,6 +119,15 @@ span {
 #sidebar.active ul.components li a span {
   display: none;
 }
+#sidebar.active li.titles {
+  display: none;
+}
+#sidebar.active li a {
+  padding: 10px 0;
+}
+#sidebar.active li a.active {
+  border: none;
+}
 
 #content {
   width: 100%;
@@ -177,14 +187,19 @@ span {
 }
 .custom-card .card-subtext {
   font-size: 0.8rem;
-  color: #8c8c8c;
+  color: var(--cinza-medio) !important;
   margin-bottom: 15px;
 }
+.custom-card .card-subtext span.green,
 .custom-card .card-subtext .green {
   color: var(--verde) !important;
 }
 .custom-card .card-subtext .red {
   color: var(--vermelho) !important;
+}
+.custom-card .card-subtext span.color-darkGray,
+.custom-card .card-subtext .color-darkGray {
+  color: var(--cinza) !important;
 }
 .custom-card .card-subtext img {
   margin-right: 0.5rem;
@@ -204,9 +219,15 @@ span {
 
 .table tr th {
   color: var(--laranja);
+  font-size: 14px;
+  font-weight: 300px;
+  font-family: "SpaceGrotesk-Regular";
 }
 .table tr td {
   color: var(--cinza-medio);
+  font-size: 14px;
+  font-weight: 300px;
+  font-family: "SpaceGrotesk-Regular";
 }
 .table tr th,
 .table tr td {
@@ -217,10 +238,32 @@ span {
   .custom-card {
     margin-bottom: 15px;
   }
+  .cards-painel {
+    margin-top: 7rem !important;
+  }
 }
 .navbar {
-  background-color: transparent;
   padding: 10px 20px;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    margin: 0;
+    left: 0;
+    background-color: var(--preto-medio);
+  }
+  .navbar button.togle {
+    border: none;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 769px) {
+  .navbar {
+    background-color: transparent;
+  }
 }
 .navbar .navbar-header .navbar-brand {
   color: var(--cinza-claro);
