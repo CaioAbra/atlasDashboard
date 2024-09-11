@@ -57,14 +57,27 @@ span {
 }
 
 #sidebar {
-  display: none;
   padding-top: 56px;
   padding-bottom: 20px;
-  min-width: 329px;
-  max-width: 329px;
   background: var(--preto-medio);
   color: #fff;
   transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  #sidebar {
+    min-width: 0;
+    max-width: 0;
+  }
+  #sidebar.active {
+    min-width: 329px;
+    max-width: 329px;
+  }
+}
+@media screen and (min-width: 769px) {
+  #sidebar {
+    min-width: 329px;
+    max-width: 329px;
+  }
 }
 #sidebar .sidebar-header {
   padding-bottom: 1remx;
@@ -109,9 +122,13 @@ span {
 }
 
 #sidebar.active {
-  min-width: 80px;
-  max-width: 80px;
   text-align: center;
+}
+@media screen and (min-width: 769px) {
+  #sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+  }
 }
 #sidebar.active .sidebar-header strong {
   display: block;
@@ -254,10 +271,25 @@ span {
     margin: 0;
     left: 0;
     background-color: var(--preto-medio);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .navbar .container-fluid {
+    justify-content: flex-start;
   }
   .navbar button.togle {
     border: none;
     background-color: transparent;
+  }
+  .navbar .adjust_navbar {
+    width: 100%;
+  }
+  .navbar ul {
+    display: ruby;
+    float: right;
+  }
+  .navbar .nav-link {
+    background-color: var(--bg-color);
   }
 }
 @media screen and (min-width: 769px) {
@@ -293,11 +325,15 @@ span {
 }
 .navbar .navbar-nav .nav-item .nav-link:not(.profile-link) {
   border-radius: 50%;
-  background-color: var(--preto-medio);
   height: 3rem;
   width: 3rem;
   align-content: center;
   text-align: center;
+}
+@media screen and (min-width: 769px) {
+  .navbar .navbar-nav .nav-item .nav-link:not(.profile-link) {
+    background-color: var(--preto-medio);
+  }
 }
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #f0ad4e;

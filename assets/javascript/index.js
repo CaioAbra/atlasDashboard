@@ -33,3 +33,8 @@ $(document).ready(function () {
 
     // if(('#sidebar').hasClass){}
 });
+
+$('button.togle').on('click', function () {
+    console.log('test');
+    $('#sidebar').toggleClass('active');
+});

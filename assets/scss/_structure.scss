@@ -4,14 +4,27 @@
 }
 
 #sidebar {
-    display: none;
+    // display: none;
     padding-top: 56px;
     padding-bottom: 20px;
-    min-width: 329px;
-    max-width: 329px;
     background: var(--preto-medio);
     color: #fff;
     transition: all 0.3s;
+
+    @media screen and (max-width:768px) {
+        min-width: 0;
+        max-width: 0;
+
+        &.active {
+            min-width: 329px;
+            max-width: 329px;
+        }
+    }
+
+    @media screen and (min-width:769px) {
+        min-width: 329px;
+        max-width: 329px;
+    }
 
     .sidebar-header {
         padding-bottom: 1remx;
@@ -78,9 +91,14 @@
 }
 
 #sidebar.active {
-    min-width: 80px;
-    max-width: 80px;
+
     text-align: center;
+
+    @media screen and (min-width:769px) {
+        min-width: 80px;
+        max-width: 80px;
+    }
+
 
     .sidebar-header strong {
         display: block;
@@ -242,7 +260,7 @@
         margin-bottom: 15px;
     }
 
-    .cards-painel{
+    .cards-painel {
         margin-top: 7rem !important;
     }
 }
