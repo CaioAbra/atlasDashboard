@@ -1,16 +1,16 @@
 $(document).ready(function () {
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
+    // $('#sidebarCollapse').on('click', function () {
+    //     $('#sidebar').toggleClass('active');
 
-        // if ($('#sidebar').hasClass('active')) {
-        $('.iconDesactive').toggleClass('d-none');
-        $('.iconActive').toggleClass('d-none');
+    //     // if ($('#sidebar').hasClass('active')) {
+    //     $('.iconDesactive').toggleClass('d-none');
+    //     $('.iconActive').toggleClass('d-none');
 
-        $('.sidebar-header div.img-logo').toggleClass('col-8');
-        $('.sidebar-header div.img-logo').toggleClass('mb-3');
-        $('.sidebar-header div.btn-sidebar').toggleClass('col-4');
-        // }
-    });
+    //     $('.sidebar-header div.img-logo').toggleClass('col-8');
+    //     $('.sidebar-header div.img-logo').toggleClass('mb-3');
+    //     $('.sidebar-header div.btn-sidebar').toggleClass('col-4');
+    //     // }
+    // });
 
 
     var ctx = document.getElementById('chart').getContext('2d');
@@ -60,7 +60,7 @@ $(document).ready(function () {
             $('.tableDesk').hide();
             $('.tableMobile').show();
 
-        
+
 
         } else {
             console.log("Tela grande (desktop)");
@@ -68,6 +68,31 @@ $(document).ready(function () {
             $('.tableDesk').show();
             $('.tableMobile').hide();
 
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+
+
+
+                // if ($('#sidebar').hasClass('active')) {
+                $('.iconDesactive').toggleClass('d-none');
+                $('.iconActive').toggleClass('d-none');
+
+                $('.sidebar-header div.img-logo').toggleClass('col-8');
+                $('.sidebar-header div.img-logo').toggleClass('mb-3');
+                $('.sidebar-header div.btn-sidebar').toggleClass('col-4');
+                // }
+            });
         }
+
+
+        if (windowWidth <= 1024) {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        }
+
+        if (windowWidth <= 768) { $('img.iconDesactive').attr('src', './src/img/logo/ATLAS icone 2.svg'); }
     }
 });
