@@ -189,8 +189,10 @@ span {
   color: #fff;
   padding: 20px;
 }
-.custom-card.grafico {
-  min-height: 478px;
+@media screen and (min-width: 1025px) {
+  .custom-card.grafico {
+    min-height: 100%;
+  }
 }
 .custom-card:not(grafico) {
   min-height: 234px;
@@ -203,13 +205,15 @@ span {
 .custom-card .card-title {
   color: var(--cinza-medio);
   font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 6px;
   line-height: 17.86px;
   display: flex;
-  letter-spacing: 1px;
   align-items: center;
+  font-family: SpaceGrotesk-Light;
 }
 .custom-card .card-title img {
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
 }
 @media screen and (max-width: 768px) {
   .custom-card .card-title {
@@ -239,7 +243,7 @@ span {
   }
 }
 .custom-card .card-subtext {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: var(--cinza-medio) !important;
   margin-bottom: 15px;
 }
@@ -318,7 +322,8 @@ span.subtitle {
 
 @media screen and (max-width: 768px) {
   .block-grafico,
-  .top-afiliados, .links {
+  .top-afiliados,
+  .links {
     padding-left: 0;
     padding-right: 0;
   }

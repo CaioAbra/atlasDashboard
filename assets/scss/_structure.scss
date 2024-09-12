@@ -184,7 +184,14 @@
     padding: 20px;
 
     &.grafico {
-        min-height: 478px;
+        @media screen and (ax-width:1024px) {
+            // min-height: 478px;
+        }
+
+        @media screen and (min-width:1025px) {
+            min-height: 100%;
+        }
+
     }
 
     &:not(grafico) {
@@ -204,14 +211,16 @@
     .card-title {
         color: var(--cinza-medio);
         font-weight: 300;
-
+        text-transform: uppercase;
+        letter-spacing: 6px;
         line-height: 17.86px;
         display: flex;
-        letter-spacing: 1px;
+        // letter-spacing: 1px;
         align-items: center;
+        font-family: SpaceGrotesk-Light;
 
         img {
-            margin-right: .5rem;
+            margin-right: .2rem;
         }
 
         @media screen and (max-width:768px) {
@@ -243,7 +252,7 @@
     }
 
     .card-subtext {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         color: var(--cinza-medio) !important;
         margin-bottom: 15px;
 
@@ -344,7 +353,8 @@ span {
 @media screen and (max-width:768px) {
 
     .block-grafico,
-    .top-afiliados, .links {
+    .top-afiliados,
+    .links {
         padding-left: 0;
         padding-right: 0;
     }
