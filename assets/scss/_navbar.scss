@@ -58,6 +58,10 @@
             font-weight: 300;
             display: block;
         }
+
+        @media screen and (min-width:1366px) {
+            line-height: 18px;
+        }
     }
 
     .search-box {
@@ -65,7 +69,7 @@
         border: none;
         border-radius: 12px;
         height: 40px;
-        width: 300px;
+        width: 38rem;
         color: var(--cinza-claro);
     }
 

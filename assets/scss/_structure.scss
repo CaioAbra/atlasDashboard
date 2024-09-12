@@ -246,7 +246,7 @@
         @media screen and (min-width:769px) {
             font-size: 14px;
             line-height: 17.86px;
-            letter-spacing: 6px;
+            letter-spacing: 4px;
         }
     }
 
@@ -374,7 +374,7 @@
 
 @media screen and (min-width: 1366px) {
     .custom-card {
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
     }
 
     .cards-painel {
@@ -415,5 +415,13 @@ span {
 
     }
 }
+
+
+@media screen and (min-width:1366px) {
+    #chart {
+        height: 14rem !important;
+    }
+}
+
 
 // @media screen and (min-width:769px) {}
