@@ -57,30 +57,46 @@ span {
 }
 
 #sidebar {
-  padding-top: 56px;
   padding-bottom: 20px;
   background: var(--preto-medio);
-  color: #fff;
+  color: var(--cinza-claro);
   transition: all 0.3s;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1366px) {
   #sidebar {
     min-width: 0;
     max-width: 0;
   }
   #sidebar.active {
+    padding-top: 1rem;
     min-width: 329px;
     max-width: 329px;
+    text-align: left;
+    z-index: 9999;
+  }
+  #sidebar.active .sidebar-header {
+    width: 100%;
+  }
+  #sidebar.active li.titles {
+    display: block;
+  }
+  #sidebar.active li a {
+    padding: 10px;
+  }
+  #sidebar.active ul.profile {
+    position: absolute;
+    bottom: 0;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1367px) {
   #sidebar {
+    padding-top: 56px;
     min-width: 329px;
     max-width: 329px;
   }
 }
 #sidebar .sidebar-header {
-  padding-bottom: 1remx;
+  padding-bottom: 1rem;
   display: inline-flex;
 }
 #sidebar ul.components {
@@ -121,29 +137,26 @@ span {
   }
 }
 
-#sidebar.active {
-  text-align: center;
-}
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1366px) {
   #sidebar.active {
     min-width: 80px;
     max-width: 80px;
   }
-}
-#sidebar.active .sidebar-header strong {
-  display: block;
-}
-#sidebar.active ul.components li a span {
-  display: none;
-}
-#sidebar.active li.titles {
-  display: none;
-}
-#sidebar.active li a {
-  padding: 10px 0;
-}
-#sidebar.active li a.active {
-  border: none;
+  #sidebar.active .sidebar-header strong {
+    display: block;
+  }
+  #sidebar.active ul.components li a span {
+    display: none;
+  }
+  #sidebar.active li.titles {
+    display: none;
+  }
+  #sidebar.active li a {
+    padding: 10px 0;
+  }
+  #sidebar.active li a.active {
+    border: none;
+  }
 }
 
 #content {
@@ -251,18 +264,18 @@ span {
   border: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1366px) {
   .custom-card {
     margin-bottom: 15px;
   }
   .cards-painel {
-    margin-top: 7rem !important;
+    margin-top: 5rem !important;
   }
 }
 .navbar {
   padding: 10px 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1366px) {
   .navbar {
     width: 100%;
     position: absolute;
@@ -292,7 +305,7 @@ span {
     background-color: var(--bg-color);
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1367px) {
   .navbar {
     background-color: transparent;
   }

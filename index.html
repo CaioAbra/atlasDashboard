@@ -30,8 +30,8 @@
                         </div>
 
 
-                        <div class="col-4 text-center d-none d-lg-flex">
-                            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <div class="col-4 text-center">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info xl">
                                 <img class="img-auto" src="./src/img/icons/btn-reduce.svg" alt="">
                             </button>
                         </div>
@@ -258,17 +258,23 @@
                 </li>
             </ul>
 
-            <a class="side-link profile-link d-none" href="#">
-                <img src="./src/img/profile.jpg" class="rounded-circle" alt="Profile" width="30">
-                <span>jonsnow@gmail.com</span>
-                <i class="fas fa-chevron-down"></i>
-            </a>
+            <ul class="list-unstyled components mx-4 profile">
+                <li>
+                    <a class="side-link profile-link d-block d-xl-none" href="#">
+                        <img src="./src/img/profile.jpg" class="rounded-circle" alt="Profile" width="30">
+                        <span>jonsnow@gmail.com</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </li>
+            </ul>
+
+
         </div>
 
         <!-- Conteúdo Principal -->
         <div id="content">
             <!-- Navbar Superior -->
-            <nav class="navbar navbar-expand-lg d-none d-lg-block">
+            <nav class="navbar navbar-expand-lg d-none d-xl-block">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -340,21 +346,21 @@
                 </div>
             </nav>
 
-            <nav class="navbar d-block d-lg-none">
+            <nav class="navbar d-block d-xl-none">
                 <div class="container-fluid">
-                    <div class="d-block d-lg-none">
+                    <div class="d-block d-xl-none">
                         <button class="togle">
                             <img src="./src/img/navbar_desactive.svg" alt="">
                         </button>
                     </div>
 
-                    <div class="navbar-header d-none d-lg-flex">
+                    <div class="navbar-header d-none d-xl-flex">
                         <span class="navbar-brand">Bom dia, Jon Snow</span>
                         <span class="navbar-subtitle">Bem vindo(a) à sua plataforma de afiliados</span>
                     </div>
 
 
-                    <form class="form-inline mx-auto d-none d-lg-flex">
+                    <form class="form-inline mx-auto d-none d-xl-flex">
                         <input class="form-control search-box" type="search" placeholder="" aria-label="Search">
                     </form>
 
@@ -402,7 +408,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item d-none d-lg-flex">
+                        <li class="nav-item d-none d-xl-flex">
                             <a class="nav-link profile-link" href="#">
                                 <img src="./src/img/profile.jpg" class="rounded-circle" alt="Profile" width="30">
                                 <span>jonsnow@gmail.com</span>
@@ -416,6 +422,13 @@
 
             <!-- Painel de Cards -->
             <div class="container-fluid mt-4 cards-painel">
+                <div class="row d-block d-xl-none">
+                    <div class="col-12">
+                        <span>Bom dia, Jon Snow</span><br>
+                        <span>Bem vindo(a) a sua plataforma de afiliados</span>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <div class="row">

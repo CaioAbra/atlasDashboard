@@ -5,29 +5,57 @@
 
 #sidebar {
     // display: none;
-    padding-top: 56px;
+
     padding-bottom: 20px;
     background: var(--preto-medio);
-    color: #fff;
+    color: var(--cinza-claro);
     transition: all 0.3s;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1366px) {
         min-width: 0;
         max-width: 0;
 
         &.active {
+            padding-top: 1rem;
             min-width: 329px;
             max-width: 329px;
+            text-align: left;
+            z-index: 9999;
+
+            .sidebar-header {
+                width: 100%;
+
+            }
+
+            li {
+                &.titles {
+                    display: block;
+                }
+
+                a {
+                    padding: 10px
+                }
+
+
+            }
+
+            ul.profile {
+                position: absolute;
+                bottom: 0;
+            }
+
+
         }
     }
 
-    @media screen and (min-width:769px) {
+    @media screen and (min-width:1367px) {
+        padding-top: 56px;
         min-width: 329px;
         max-width: 329px;
     }
 
     .sidebar-header {
-        padding-bottom: 1remx;
+        padding-bottom: 1rem;
         display: inline-flex;
     }
 
@@ -92,32 +120,31 @@
 
 #sidebar.active {
 
-    text-align: center;
+    // text-align: center;
 
-    @media screen and (min-width:769px) {
+    @media screen and (min-width:1366px) {
         min-width: 80px;
         max-width: 80px;
-    }
 
+        .sidebar-header strong {
+            display: block;
+        }
 
-    .sidebar-header strong {
-        display: block;
-    }
+        ul.components li a span {
+            display: none;
+        }
 
-    ul.components li a span {
-        display: none;
-    }
+        li.titles {
+            display: none;
+        }
 
-    li.titles {
-        display: none;
-    }
+        li {
+            a {
+                padding: 10px 0;
 
-    li {
-        a {
-            padding: 10px 0;
-
-            &.active {
-                border: none;
+                &.active {
+                    border: none;
+                }
             }
         }
     }
@@ -255,12 +282,12 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1366px) {
     .custom-card {
         margin-bottom: 15px;
     }
 
     .cards-painel {
-        margin-top: 7rem !important;
+        margin-top: 5rem !important;
     }
 }

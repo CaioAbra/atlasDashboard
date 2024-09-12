@@ -3,7 +3,7 @@
     padding: 10px 20px;
 
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1366px) {
         width: 100%;
         position: absolute;
         z-index: 999;
@@ -41,7 +41,7 @@
 
     }
 
-    @media screen and (min-width:769px) {
+    @media screen and (min-width:1367px) {
         background-color: transparent;
     }
 

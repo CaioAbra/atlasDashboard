@@ -38,3 +38,27 @@ $('button.togle').on('click', function () {
     console.log('test');
     $('#sidebar').toggleClass('active');
 });
+
+
+$(document).ready(function () {
+    checkWidth();
+
+    $(window).resize(function () {
+        checkWidth();
+    });
+
+    function checkWidth() {
+        var windowWidth = $(window).width();
+
+        if (windowWidth <= 1366) {
+            console.log("Tela pequena (mobile)");
+            $('#sidebarCollapse .img-auto').attr('src', './src/img/icons/sidebar/sidebar_sm.svg');
+
+        
+
+        } else {
+            console.log("Tela grande (desktop)");
+            $('#sidebarCollapse .img-auto').attr('src', './src/img/icons/btn-reduce.svg');
+        }
+    }
+});
