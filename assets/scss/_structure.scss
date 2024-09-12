@@ -212,8 +212,8 @@
         color: var(--cinza-medio);
         font-weight: 300;
         text-transform: uppercase;
-        letter-spacing: 6px;
-        line-height: 17.86px;
+        
+        
         display: flex;
         // letter-spacing: 1px;
         align-items: center;
@@ -225,10 +225,14 @@
 
         @media screen and (max-width:768px) {
             font-size: 12px;
+            line-height: 10.21px;
+            letter-spacing: 3px;
         }
 
         @media screen and (min-width:769px) {
             font-size: 14px;
+            line-height: 17.86px;
+            letter-spacing: 6px;
         }
     }
 

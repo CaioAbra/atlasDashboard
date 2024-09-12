@@ -206,8 +206,6 @@ span {
   color: var(--cinza-medio);
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 6px;
-  line-height: 17.86px;
   display: flex;
   align-items: center;
   font-family: SpaceGrotesk-Light;
@@ -218,11 +216,15 @@ span {
 @media screen and (max-width: 768px) {
   .custom-card .card-title {
     font-size: 12px;
+    line-height: 10.21px;
+    letter-spacing: 3px;
   }
 }
 @media screen and (min-width: 769px) {
   .custom-card .card-title {
     font-size: 14px;
+    line-height: 17.86px;
+    letter-spacing: 6px;
   }
 }
 .custom-card .card-value {
