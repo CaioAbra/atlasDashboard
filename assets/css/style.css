@@ -280,8 +280,18 @@ span {
 }
 .custom-card .card-link {
   font-size: 0.9rem;
-  color: var(--cinza-medio);
+  color: var(--cinza-claro);
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .custom-card .card-link {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .custom-card .card-link {
+    font-size: 14px;
+  }
 }
 .custom-card .card-link:hover {
   text-decoration: var(--laranja);

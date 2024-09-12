@@ -241,8 +241,6 @@
 
         @media screen and (max-width:768px) {
             font-size: 12px;
-            // line-height: 10.21px;
-            // letter-spacing: 3px;
         }
 
         @media screen and (min-width:769px) {
@@ -297,8 +295,16 @@
 
     .card-link {
         font-size: 0.9rem;
-        color: var(--cinza-medio);
+        color: var(--cinza-claro);
         text-decoration: none;
+
+        @media screen and (max-width:768px) {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width:769px) {
+            font-size: 14px;
+        }
 
         &:hover {
             text-decoration: var(--laranja);
