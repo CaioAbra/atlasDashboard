@@ -103,17 +103,11 @@
         }
 
         svg {
-            // stroke: #F4F4F4;
 
-            @media screen and (min-width:768px) {
+            @media screen and (min-width:1025px) {
                 margin-right: .5rem;
             }
 
-            // fill: #F4F4F4;
-
-            // &.active {
-            //     stroke: var(--laranja);
-            // }
         }
     }
 }
@@ -126,8 +120,20 @@
         min-width: 80px;
         max-width: 80px;
 
+        .sidebar-header {
+            padding-bottom: 1rem;
+            display: block;
+            margin: auto;
+        }
+
         .sidebar-header strong {
             display: block;
+            text-align: center;
+
+            div {
+                margin: auto;
+            }
+
         }
 
         ul.components li a span {
@@ -139,6 +145,8 @@
         }
 
         li {
+            text-align: center;
+
             a {
                 padding: 10px 0;
 
@@ -146,6 +154,14 @@
                     border: none;
                 }
             }
+        }
+
+        svg {
+
+            @media screen and (min-width:1025px) {
+                margin-right: 0rem !important;
+            }
+
         }
     }
 }
@@ -212,8 +228,8 @@
         color: var(--cinza-medio);
         font-weight: 300;
         text-transform: uppercase;
-        
-        
+
+
         display: flex;
         // letter-spacing: 1px;
         align-items: center;

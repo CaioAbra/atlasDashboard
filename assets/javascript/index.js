@@ -5,6 +5,10 @@ $(document).ready(function () {
         // if ($('#sidebar').hasClass('active')) {
         $('.iconDesactive').toggleClass('d-none');
         $('.iconActive').toggleClass('d-none');
+
+        $('.sidebar-header div.img-logo').toggleClass('col-8');
+        $('.sidebar-header div.img-logo').toggleClass('mb-3');
+        $('.sidebar-header div.btn-sidebar').toggleClass('col-4');
         // }
     });
 

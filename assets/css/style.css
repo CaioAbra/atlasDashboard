@@ -131,7 +131,7 @@ span {
   color: var(--cinza-claro);
   text-transform: uppercase;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   #sidebar ul.components svg {
     margin-right: 0.5rem;
   }
@@ -142,8 +142,17 @@ span {
     min-width: 80px;
     max-width: 80px;
   }
+  #sidebar.active .sidebar-header {
+    padding-bottom: 1rem;
+    display: block;
+    margin: auto;
+  }
   #sidebar.active .sidebar-header strong {
     display: block;
+    text-align: center;
+  }
+  #sidebar.active .sidebar-header strong div {
+    margin: auto;
   }
   #sidebar.active ul.components li a span {
     display: none;
@@ -151,11 +160,19 @@ span {
   #sidebar.active li.titles {
     display: none;
   }
+  #sidebar.active li {
+    text-align: center;
+  }
   #sidebar.active li a {
     padding: 10px 0;
   }
   #sidebar.active li a.active {
     border: none;
+  }
+}
+@media screen and (min-width: 1366px) and (min-width: 1025px) {
+  #sidebar.active svg {
+    margin-right: 0rem !important;
   }
 }
 
