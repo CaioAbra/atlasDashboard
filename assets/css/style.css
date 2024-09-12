@@ -332,10 +332,16 @@ span {
   .custom-card {
     margin-bottom: 2px;
   }
+  .cards-painel {
+    margin-top: 5rem !important;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1365px) {
   .custom-card {
     margin-bottom: 20px;
+  }
+  .cards-painel {
+    margin-top: 5rem !important;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -344,6 +350,9 @@ span {
   }
   .cards-painel {
     margin-top: 5rem !important;
+  }
+  .cards-painel {
+    margin-top: 36px !important;
   }
 }
 span.name {
