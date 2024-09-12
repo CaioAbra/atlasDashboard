@@ -449,7 +449,7 @@ span.subtitle {
   align-content: center;
   text-align: center;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1366px) {
   .navbar .navbar-nav .nav-item .nav-link:not(.profile-link) {
     background-color: var(--preto-medio);
   }
