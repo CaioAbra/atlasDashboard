@@ -98,13 +98,14 @@ span {
 #sidebar .sidebar-header {
   padding-bottom: 1rem;
   display: inline-flex;
+  align-items: center;
 }
 #sidebar ul.components {
   padding: 20px 0;
 }
 #sidebar ul.components a {
   padding: 10px;
-  font-size: 14px;
+  font-size: 1.1rem;
   display: block;
   color: var(--cinza-claro);
   transition: all 0.3s ease;
@@ -123,7 +124,7 @@ span {
 }
 #sidebar ul.components .titles {
   padding: 10px;
-  font-size: 1.1rem;
+  font-size: 14px;
   display: block;
   color: var(--cinza-medio);
   text-transform: uppercase;

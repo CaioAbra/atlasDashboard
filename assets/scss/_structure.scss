@@ -57,6 +57,7 @@
     .sidebar-header {
         padding-bottom: 1rem;
         display: inline-flex;
+        align-items: center;
     }
 
     ul.components {
@@ -65,7 +66,7 @@
 
         a {
             padding: 10px;
-            font-size: 14px;
+            font-size: 1.1rem;
             display: block;
             color: var(--cinza-claro);
             transition: all .3s ease;
@@ -91,7 +92,7 @@
 
         .titles {
             padding: 10px;
-            font-size: 1.1rem;
+            font-size: 14px;
             display: block;
             color: var(--cinza-medio);
             text-transform: uppercase;
