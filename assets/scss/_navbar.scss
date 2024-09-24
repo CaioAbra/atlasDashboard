@@ -123,6 +123,26 @@
                     margin-left: 5px;
                 }
             }
+
+            .dropdown-toggle::after {
+                display: none !important;
+            }
+
+            .dropdown-menu {
+                background-color: #4D4D4D !important ;
+                border-radius: 6px !important;
+
+                a {
+                    color: #FFFFFF;
+                    font-size: 12px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
         }
     }
+
+
 }
