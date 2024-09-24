@@ -104,9 +104,9 @@ span {
 }
 #sidebar ul.components a {
   padding: 10px;
-  font-size: 1.1em;
+  font-size: 14px;
   display: block;
-  color: var(--cinza-claro);
+  color: var(--cinza-medio);
   transition: all 0.3s ease;
 }
 #sidebar ul.components a.active {
@@ -127,6 +127,9 @@ span {
   display: block;
   color: var(--cinza-claro);
   text-transform: uppercase;
+}
+#sidebar ul.components svg {
+  margin-right: 0.5rem;
 }
 @media screen and (min-width: 1025px) {
   #sidebar ul.components svg {
@@ -208,8 +211,10 @@ span {
     min-height: 100%;
   }
 }
-.custom-card:not(grafico) {
-  min-height: 234px;
+@media screen and (min-width: 1366px) {
+  .custom-card:not(grafico) {
+    min-height: 234px;
+  }
 }
 @media screen and (max-width: 768px) {
   .custom-card .card-body {
@@ -298,6 +303,9 @@ span {
   border-top: 1px solid #1F1F1F;
 }
 
+.table.tableMobile {
+  min-width: 24rem;
+}
 .table tr th {
   color: var(--laranja);
   font-weight: 300;
@@ -315,7 +323,7 @@ span {
 @media screen and (max-width: 500px) {
   .table tr th,
   .table tr td {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 501px) {
@@ -349,15 +357,17 @@ span {
     margin-top: 36px !important;
   }
 }
-span.name {
+span.subtitle {
+  color: var(--cinza-medio);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+h6.name {
   color: var(--cinza-claro);
   font-size: 16px;
   font-weight: 400;
-}
-span.subtitle {
-  color: var(--cinza-medio);
-  font-size: 10px;
-  font-weight: 400;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -377,6 +387,12 @@ span.subtitle {
     height: 14rem !important;
   }
 }
+@media screen and (max-width: 500px) {
+  .overflow-x-mobile {
+    overflow-x: scroll;
+  }
+}
+
 .navbar {
   padding: 10px 20px;
 }
@@ -389,8 +405,7 @@ span.subtitle {
     margin: 0;
     left: 0;
     background-color: var(--preto-medio);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
   }
   .navbar .container-fluid {
     justify-content: flex-start;
@@ -403,7 +418,7 @@ span.subtitle {
     width: 100%;
   }
   .navbar ul {
-    display: ruby;
+    display: -webkit-inline-box;
     float: right;
   }
   .navbar .nav-link {
