@@ -100,6 +100,11 @@ span {
   display: inline-flex;
   align-items: center;
 }
+@media screen and (min-width: 1024px) {
+  #sidebar .sidebar-header img.iconDesactive {
+    width: 100%;
+  }
+}
 #sidebar ul.components {
   padding: 20px 0;
 }
