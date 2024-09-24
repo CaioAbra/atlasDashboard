@@ -505,9 +505,12 @@ h6.name {
 .navbar .navbar-nav .nav-item .dropdown-menu a {
   color: #FFFFFF;
   font-size: 12px;
+  transition: all 0.3s ease;
 }
 .navbar .navbar-nav .nav-item .dropdown-menu a:hover {
   text-decoration: none;
+  background-color: transparent !important;
+  color: var(--laranja);
 }
 
 * {

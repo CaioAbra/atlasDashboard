@@ -135,9 +135,12 @@
                 a {
                     color: #FFFFFF;
                     font-size: 12px;
+                    transition: all .3s ease;
 
                     &:hover {
                         text-decoration: none;
+                        background-color: transparent !important;
+                        color: var(--laranja);
                     }
                 }
             }
