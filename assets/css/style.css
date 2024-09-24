@@ -106,7 +106,7 @@ span {
   padding: 10px;
   font-size: 14px;
   display: block;
-  color: var(--cinza-medio);
+  color: var(--cinza-claro);
   transition: all 0.3s ease;
 }
 #sidebar ul.components a.active {
@@ -123,9 +123,9 @@ span {
 }
 #sidebar ul.components .titles {
   padding: 10px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   display: block;
-  color: var(--cinza-claro);
+  color: var(--cinza-medio);
   text-transform: uppercase;
 }
 #sidebar ul.components svg {

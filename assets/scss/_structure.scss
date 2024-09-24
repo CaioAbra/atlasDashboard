@@ -67,7 +67,7 @@
             padding: 10px;
             font-size: 14px;
             display: block;
-            color: var(--cinza-medio);
+            color: var(--cinza-claro);
             transition: all .3s ease;
 
             &.active {
@@ -91,9 +91,9 @@
 
         .titles {
             padding: 10px;
-            font-size: 1.1em;
+            font-size: 1.1rem;
             display: block;
-            color: var(--cinza-claro);
+            color: var(--cinza-medio);
             text-transform: uppercase;
         }
 
